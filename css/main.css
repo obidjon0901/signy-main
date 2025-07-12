@@ -1261,8 +1261,20 @@ button {
     max-width: 768px;
     flex-wrap: wrap;
   }
+  .footer__container:nth-child(5) {
+    margin-right: auto;
+  }
   .footer__logo {
     max-width: 120px;
     height: 36px;
+  }
+  .footer__address-list {
+    margin-top: 29px;
+  }
+}
+@media only screen and (max-width: 646px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
   }
 }

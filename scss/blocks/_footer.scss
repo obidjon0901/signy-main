@@ -66,6 +66,9 @@
     .footer__container {
         max-width: 768px;
         flex-wrap: wrap;
+         &:nth-child(5){
+            margin-right: auto;
+         }
     }
 
     .footer__logo {
@@ -74,6 +77,12 @@
 
     }
     .footer__address-list{
-        
+        margin-top: 29px;
+    }
+}
+@media only screen and (max-width:646px){
+    .footer__container{
+        display: flex;
+        flex-direction: column;
     }
 }
