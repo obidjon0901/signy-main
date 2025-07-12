@@ -1,0 +1,76 @@
+.live {
+    padding-top: 49px;
+    padding-bottom: 63px;
+}
+
+.live__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.live__video {
+    max-width: 734px;
+    height: 451px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-image: url(../../img/live.jpg);
+    object-fit: contain;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-image: url(../../img/live-gradient.png);
+    }
+}
+
+.live__play-button {
+    width: 102px;
+    height: 102px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 51px);
+    top: calc(50% - 51px);
+    cursor: pointer;
+    background-image: url(../../img/play.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media only screen and (max-width:$tablet) {
+    .live__video {
+        max-width: 100%;
+        background-position: center center;
+    }
+
+    .live__title {
+        font-family: " IBM Plex Serif";
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (max-width:$mobile) {
+    .live__video {
+        max-width: 100%;
+    }
+
+    .live__title {
+        font-family: "IBM Plex Serif";
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+}

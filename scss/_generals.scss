@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul , ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'IBM Plex Sans';
+    color: $black;
+}
+button{
+    font-family: 'IBM Plex Sans';
+}
+.gradient{
+    background: linear-gradient(293.97deg, rgba(222, 238, 252, 1) -9.96%, rgba(255, 255, 255, 0) 111.88%);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
